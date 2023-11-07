@@ -2,107 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/icons8-impresión-de-la-pata-del-perro-32.png">
-    <title>Pagina Web</title>
-
-    <style>
-        body {
-            font-family: "Lucida Console", "Courier New", monospace;
-            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
-            padding: 0;
-            margin: 0;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            display: inline-block;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #92a4ff;
-        }
-
-        h1 {
-            background-color: black;
-            padding: 45px;
-            margin: 0;
-            color: #92a4ff;
-            text-align: center;
-
-        }
-
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 33vw;
-        }
-
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery img {
-            width: 100%;
-            height: auto;
-        }
-
-        div.desc {
-            padding: 15px;
-            text-align: center;
-        }
-
-        .centrado {
-            display: flex;
-            justify-content: center;
-        }
-        .footer {
-            background-color: #333;
-            color: #FFF;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-        }
-    </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="assets/img/icons8-impresión-de-la-pata-del-perro-32.png">
+   <!--Boostrap-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/style.css">
+   <title>Pagina Web</title>
+   
 </head>
 
 <body>
     <header>
         <h1>Julián Seara - Programador Web </h1>
-       <nav style="background-color: #333; padding: 5px;">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="habilidades.html">Habilidades</a></li>
-            <li><a class="active" href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-       </nav>
+     
+       
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+             
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <li><a class="active" href="index.html">Home</a></li>
+                  </li>
+                  <li class="nav-item">
+                    <li><a href="about.html">Acerca de Mi</a></li>
+                  </li>
+                  <li class="nav-item">
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                  </li>
+                  <li><a href="proyectos.html">Proyectos</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
 
@@ -111,91 +48,43 @@
     <hr>
  <section class="centrado" style="padding: 50px;">   
    
-    <div class="gallery">
-           <img  src="assets/img/proyecto2.jpg" alt="proyecto2" >
-    </div>
-             <div class="desc">
-                <h3>Batur Muebles</h3>
-                <a href="##">Ver Proyecto</a> 
-             </div>
-
-
-
-<div class="gallery">
-      <img src="assets/img/proyecto 3.jpg" alt="proyecto3" >
-</div>
-         <div class="desc">
-            <h3>Osteopatía Claudia Moran</h3>
-            <a href="##">Ver Proyecto</a>    
-        </div>
-
-<div class="gallery">
-      <img src="assets/img/Proyecto 4.png" alt="proyecto4">
- </div>
-      <div class="desc">
-        <h3>Aman</h3>
-        <a href="##">Ver Proyecto</a> 
-      </div>
-
- </section>
- <section class="centrado" style="padding: 50px;">   
    
-    <div class="gallery">
-           <img  src="assets/img/proyecto2.jpg" alt="proyecto2" >
-    </div>
-             <div class="desc">
-                <h3>Batur Muebles</h3>
-                <a href="##">Ver Proyecto</a> 
+
+             <div class="card" style="width: 18rem; margin: 25px;">
+               <img  src="assets/img/proyecto2.jpg" alt="proyecto2" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Batur muebles</h5>
+                 <p class="card-text">Empresa de fabricación de muebles de Pino.</p>
+                 <a href="#" class="btn btn-primary">Ver Proyecto</a>
+               </div>
              </div>
 
-
-
-<div class="gallery">
-      <img src="assets/img/proyecto 3.jpg" alt="proyecto3" >
-</div>
-         <div class="desc">
-            <h3>Osteopatía Claudia Moran</h3>
-            <a href="##">Ver Proyecto</a>    
-        </div>
-
-<div class="gallery">
-      <img src="assets/img/Proyecto 4.png" alt="proyecto4">
- </div>
-      <div class="desc">
-        <h3>Aman</h3>
-        <a href="##">Ver Proyecto</a> 
-      </div>
-
- </section>
- <section class="centrado" style="padding: 50px;">   
-   
-    <div class="gallery">
-           <img  src="assets/img/proyecto2.jpg" alt="proyecto2" >
-    </div>
-             <div class="desc">
-                <h3>Batur Muebles</h3>
-                <a href="##">Ver Proyecto</a> 
+             <div class="card" style="width: 18rem; margin: 25px;">
+               <img  src="assets/img/proyecto2.jpg" alt="proyecto2" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Batur muebles</h5>
+                 <p class="card-text">Empresa de fabricación de muebles de Pino.</p>
+                 <a href="#" class="btn btn-primary">Ver Proyecto</a>
+               </div>
              </div>
+             <div class="card" style="width: 18rem; margin: 25px;">
+               <img  src="assets/img/proyecto2.jpg" alt="proyecto2" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Batur muebles</h5>
+                 <p class="card-text">Empresa de fabricación de muebles de Pino.</p>
+                 <a href="#" class="btn btn-primary">Ver Proyecto</a>
+               </div>
+             </div>
+            </section>
 
+<footer class="footer">
+    <p>Derechos Resevados &copy; 2023</p>
+</footer>
+<!-- Boostrap--> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 
-
-<div class="gallery">
-      <img src="assets/img/proyecto 3.jpg" alt="proyecto3" >
-</div>
-         <div class="desc">
-            <h3>Osteopatía Claudia Moran</h3>
-            <a href="##">Ver Proyecto</a>    
-        </div>
-
-<div class="gallery">
-      <img src="assets/img/Proyecto 4.png" alt="proyecto4">
- </div>
-      <div class="desc">
-        <h3>Aman</h3>
-        <a href="##">Ver Proyecto</a> 
-      </div>
-
- </section>
+</html>
 <footer class="footer">
     <p>Derechos Resevados &copy; 2023</p>
 </footer>
